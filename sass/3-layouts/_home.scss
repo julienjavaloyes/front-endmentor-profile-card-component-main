@@ -1,0 +1,53 @@
+@use "../0-abstracts/media" as m;
+@use  '../0-abstracts/colors' as c;
+
+body {
+    background-color: c.$Darkcyan;
+    min-height: 100vh;
+    background-image: url(../images/bg-pattern-top.svg), url(../images/bg-pattern-bottom.svg);
+    background-size: 55vw auto,55vw auto;
+    background-repeat: no-repeat,no-repeat;
+    background-position: left -5vw top -25vw , right -5vw bottom -25vw;
+    //background-image: url(../images/bg-pattern-bottom.svg), url(../images/bg-pattern-top.svg);
+    //background-position: right bottom, left top;
+    //background-size: cover,cover;
+}
+
+.container {
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    overflow: hidden;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+@include m.stop-top-overflow (10px,400px) {
+    .container {
+        top: 0;
+        left: 50%;
+        transform: translate( -50%,0);
+    }
+}
+
+@include m.for-desktop-up (900px) {    
+    .container {
+        top:50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        flex-direction: column;
+
+    }
+}
+/*
+@include m.stop-top-overflow (900px,550px) {
+    .container {
+        top: 0;
+        left: 50%;
+        transform: translate( -50%,0);
+    }
+}
+*/

@@ -1,0 +1,33 @@
+@use  '../0-abstracts/colors' as c;
+//example $fontDisplay: 'Big Shoulders Display', cursive;
+
+$fontDisplay: 'Kumbh Sans', sans-serif;
+
+body {
+    font-size: 18px;
+    font-family: $fontDisplay;
+
+    .nameage {
+        font-weight: 700;
+        .nameage-age {
+            color: c.$Darkgrayishblue;
+            font-weight: 400;
+        }
+    }
+
+    .location {
+        color: c.$Darkgrayishblue;
+        font-size: 14px;
+    }
+    .stats {
+        .stat1-nb, .stat2-nb, .stat3-nb {
+            font-size: 18px;
+            font-weight: 700;
+        }
+        .stat1-desc, .stat2-desc, .stat3-desc {
+            color: c.$Darkgrayishblue;
+            font-size: 11px;
+            letter-spacing: 2px;
+        }
+    }
+}

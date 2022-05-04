@@ -1,0 +1,60 @@
+@use "../0-abstracts/colors" as c;
+
+.card {
+    background-color: white;
+    text-align: center;
+
+    #imagesoverlap {
+        position: relative;
+        .backgroundtop  {
+            background-image: url('../images/bg-pattern-card.svg');
+            height: 140px;
+        }
+        .profileimgborder {
+            background-color: white;
+            position: absolute;
+            height: 110px;
+            width: 110px;
+            top: 85px;
+            left: 50%;
+            transform: translateX(-50%);
+            border-radius: 50%;
+        }
+        .profileimg {
+            background-image: url('../images/image-victor.jpg');
+            background-size: cover;
+            height: 100px;
+            width: 100px;
+            position: absolute;
+            top: 90px;
+            left: 50%;
+            transform: translateX(-50%);
+            border-radius: 50%;
+            margin: 0px;
+        }
+    }
+
+    .nameage {
+        padding-top: 70px;
+        .nameage-age {
+            padding-left: 4px;
+        }
+    }
+    .location {
+        padding: 10px;
+    }
+    hr {
+        border: none;
+        height: 1px;
+        background-color: c.$Darkgray;
+        opacity: 0.3;
+    }
+    .stats {
+        display: flex;
+        justify-content: space-evenly;
+        padding: 20px;
+        .stat1-desc, .stat2-desc, .stat3-desc {
+            padding: 5px;
+        }
+    }
+}

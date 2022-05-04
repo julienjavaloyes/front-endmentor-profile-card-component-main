@@ -1,0 +1,153 @@
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+hr {
+  width: 100%;
+}
+
+/*
+h1,
+h2,
+h3 {
+    margin-top: 0;
+}
+
+a,
+a:visited,
+a:active {
+    text-decoration: none;
+}
+*/
+body {
+  font-size: 18px;
+  font-family: "Kumbh Sans", sans-serif;
+}
+body .nameage {
+  font-weight: 700;
+}
+body .nameage .nameage-age {
+  color: hsl(227deg, 10%, 46%);
+  font-weight: 400;
+}
+body .location {
+  color: hsl(227deg, 10%, 46%);
+  font-size: 14px;
+}
+body .stats .stat1-nb, body .stats .stat2-nb, body .stats .stat3-nb {
+  font-size: 18px;
+  font-weight: 700;
+}
+body .stats .stat1-desc, body .stats .stat2-desc, body .stats .stat3-desc {
+  color: hsl(227deg, 10%, 46%);
+  font-size: 11px;
+  letter-spacing: 2px;
+}
+
+.card {
+  background-color: white;
+  text-align: center;
+}
+.card #imagesoverlap {
+  position: relative;
+}
+.card #imagesoverlap .backgroundtop {
+  background-image: url("../images/bg-pattern-card.svg");
+  height: 140px;
+}
+.card #imagesoverlap .profileimgborder {
+  background-color: white;
+  position: absolute;
+  height: 110px;
+  width: 110px;
+  top: 85px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 50%;
+}
+.card #imagesoverlap .profileimg {
+  background-image: url("../images/image-victor.jpg");
+  background-size: cover;
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  top: 90px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 50%;
+  margin: 0px;
+}
+.card .nameage {
+  padding-top: 70px;
+}
+.card .nameage .nameage-age {
+  padding-left: 4px;
+}
+.card .location {
+  padding: 10px;
+}
+.card hr {
+  border: none;
+  height: 1px;
+  background-color: hsl(0deg, 0%, 59%);
+  opacity: 0.3;
+}
+.card .stats {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 20px;
+}
+.card .stats .stat1-desc, .card .stats .stat2-desc, .card .stats .stat3-desc {
+  padding: 5px;
+}
+
+body {
+  background-color: hsl(185deg, 75%, 39%);
+  min-height: 100vh;
+  background-image: url(../images/bg-pattern-top.svg), url(../images/bg-pattern-bottom.svg);
+  background-size: 55vw auto, 55vw auto;
+  background-repeat: no-repeat, no-repeat;
+  background-position: left -5vw top -25vw, right -5vw bottom -25vw;
+}
+
+.container {
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  overflow: hidden;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@media only screen and (min-width: 10px) and (max-height: 400px) {
+  .container {
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+}
+@media (min-width: 900px) {
+  .container {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    flex-direction: column;
+  }
+}
+/*
+@include m.stop-top-overflow (900px,550px) {
+    .container {
+        top: 0;
+        left: 50%;
+        transform: translate( -50%,0);
+    }
+}
+*//*# sourceMappingURL=main.css.map */
