@@ -20,7 +20,7 @@ Using html + sass
 
 ### Links
 
-- Live Site URL: https://julienjavaloyes.github.io/frontendmentor-3-column-preview-card-component-main/
+- Live Site URL: https://julienjavaloyes.github.io/front-endmentor-profile-card-component-main/
 
 ### Built with
 
